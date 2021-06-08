@@ -1,0 +1,21 @@
+
+@mixin  response ($breakpoint) {
+    @if $breakpoint == Laptop-Big {
+        @media (max-width : 1440px) { @content };
+    }
+
+    @if $breakpoint == Laptop-Medium {
+        @media (max-width : 1200px) { @content };
+    }
+
+    @if $breakpoint == Mobile {
+        @media (max-width : 450px) {@content}
+    }
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

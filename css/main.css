@@ -1,0 +1,205 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 1440px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #040218;
+  color: #fff;
+}
+
+.purple-color {
+  color: #8520da;
+}
+
+.numerics-style {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.numerics-data {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #979dac;
+}
+
+.container {
+  background-color: #10002b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40rem;
+  width: 115rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1440px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 40rem;
+    height: 70rem;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    height: 80rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.container__left {
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 1440px) {
+  .container__left > * {
+    padding: 1rem 5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container__left > * {
+    padding: 1rem 3rem;
+  }
+}
+
+.container__left--header {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+@media (max-width: 1440px) {
+  .container__left--header {
+    font-size: 3rem;
+    margin-top: -8rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container__left--header {
+    font-size: 3rem;
+    margin-top: 0;
+  }
+}
+
+.container__left--paragraph {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  line-height: 1.5;
+  color: #979dac;
+  padding-right: 5rem;
+}
+
+.container__left--databox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 5rem;
+}
+
+@media (max-width: 1200px) {
+  .container__left--databox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.container__left--databox > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.7;
+}
+
+@media (max-width: 1200px) {
+  .container__left--databox > * {
+    margin: 1rem 0;
+  }
+}
+
+.container__right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#8620da9d)), url(images/image-header-desktop.jpg);
+  background-image: linear-gradient(#8620da9d), url(images/image-header-desktop.jpg);
+  background-size: cover;
+}
+
+@media (max-width: 1440px) {
+  .container__right {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
+  }
+}
